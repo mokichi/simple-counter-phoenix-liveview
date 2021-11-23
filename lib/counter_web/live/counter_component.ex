@@ -7,7 +7,7 @@ defmodule CounterWeb.CounterComponent do
 
   def update(assigns, socket) do
     socket =
-      if Map.has_key?(assigns, :count) do
+      if Map.has_key?(socket.assigns, :count) do
         socket
       else
         assign(socket, :count, assigns.initial_count)

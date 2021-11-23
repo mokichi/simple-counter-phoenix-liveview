@@ -1,10 +1,6 @@
 Count: <%= @count %>
-<button phx-click="dec">
-  減
-</button>
-<button phx-click="inc">
-  増
-</button>
+<button phx-click="dec">-</button>
+<button phx-click="inc">+</button>
 
 <%= live_component CounterWeb.CounterComponent, id: '1', initial_count: 123 %>
 <%= live_component CounterWeb.CounterComponent, id: '2', initial_count: 2 %>
